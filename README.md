@@ -1,6 +1,6 @@
-# vue-audio-recorder
+# vue3-audio-recorder
 
-> Audio recorder for Vue.js. It allows to create, play, download and store records on a server.
+> Audio recorder for Vue3. It allows to create, play, download and store records on a server.
 
 #### [Live demo](https://jsfiddle.net/grishkovelli/rb1anxyj/)
 
@@ -8,6 +8,7 @@
 
 ### Features
 
+- Vue3 compatible.
 - Beautiful clean UI
 - Download/upload/play record
 - Time limit
@@ -95,13 +96,13 @@ npm i vue-audio-recorder --save
 
 ``` bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn run dev
 
 # build for production with minification
-npm run build
+yarn run build
 ```
 
 ## TODO

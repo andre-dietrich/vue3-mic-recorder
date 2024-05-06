@@ -5,17 +5,15 @@ const components = {
   AudioPlayer,
   AudioRecorder,
 
-  install (Vue) {
+  install (app) {
     if (this.installed) {
       return
     }
 
     this.installed = true
 
-    Vue.prototype.$eventBus = Vue.prototype.$eventBus || new Vue
-
-    Vue.component('audio-player', AudioPlayer)
-    Vue.component('audio-recorder', AudioRecorder)
+    app.component('audio-player', AudioPlayer)
+    app.component('audio-recorder', AudioRecorder)
   }
 }
 

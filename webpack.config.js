@@ -1,6 +1,7 @@
 const webpack = require('webpack')
-const merge = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const path = require('path')
+const {VueLoaderPlugin} = require("vue-loader");
 
 module.exports = (env, args) => {
   let conf = `./webpack.${env.NODE_ENV === 'production' ? 'prod' : 'dev'}.js`
@@ -45,23 +46,14 @@ module.exports = (env, args) => {
     },
     resolve: {
       alias: {
-        'vue$': 'vue/dist/vue.esm.js',
         '@': path.resolve(__dirname, 'src')
       },
-      extensions: ['*', '.js', '.vue', '.json']
+      extensions: ['.*', '.js', '.vue', '.json']
     },
     plugins: [
-      new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: `"${process.env.NODE_ENV}"`
-        },
-        VERSION: JSON.stringify(require("./package.json").version)
-      }),
+      new VueLoaderPlugin(),
     ],
     devServer: {
-      historyApiFallback: true,
-      noInfo: true,
-      overlay: true
     },
     performance: {
       hints: false

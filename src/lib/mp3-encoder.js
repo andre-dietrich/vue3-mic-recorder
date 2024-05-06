@@ -1,4 +1,4 @@
-import { Mp3Encoder } from 'lamejs'
+import { Mp3Encoder } from '@breezystack/lamejs'
 
 export default class {
   constructor(config) {

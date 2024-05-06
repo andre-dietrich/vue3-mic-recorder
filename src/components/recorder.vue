@@ -236,11 +236,14 @@
               :record="record"
               :filename="filename"
               :headers="headers"
-              :upload-url="uploadUrl"/>
+              :upload-url="uploadUrl"
+              @start-upload="onStartUpload"
+              @end-upload="onEndUpload"
+            />
         </div>
       </div>
 
-      <audio-player :record="selected"/>
+      <audio-player ref="player" :record="selected"/>
     </div>
   </div>
 </template>
@@ -290,13 +293,15 @@
       IconButton,
       Uploader
     },
-    mounted () {
-      this.$eventBus.$on('start-upload', () => {
+    beforeDestroy () {
+      this.stopRecorder()
+    },
+    methods: {
+      onStartUpload() {
         this.isUploading = true
         this.beforeUpload && this.beforeUpload('before upload')
-      })
-
-      this.$eventBus.$on('end-upload', (msg) => {
+      },
+      onEndUpload(msg) {
         this.isUploading = false
 
         if (msg.status === 'success') {
@@ -304,12 +309,7 @@
         } else {
           this.failedUpload && this.failedUpload(msg.response)
         }
-      })
-    },
-    beforeDestroy () {
-      this.stopRecorder()
-    },
-    methods: {
+      },
       toggleRecorder () {
         if (this.attempts && this.recorder.records.length >= this.attempts) {
           return
@@ -331,8 +331,8 @@
       },
       removeRecord (idx) {
         this.recordList.splice(idx, 1)
-        this.$set(this.selected, 'url', null)
-        this.$eventBus.$emit('remove-record')
+        this.selected['url'] = null
+        this.$refs.player._resetProgress()
       },
       choiceRecord (record) {
         if (this.selected === record) {

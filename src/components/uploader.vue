@@ -15,6 +15,10 @@
     props: {
       record: { type: Object }
     },
+    emits: [
+      'start-upload',
+      'end-upload',
+    ],
     components: {
       IconButton
     },
@@ -24,7 +28,7 @@
           return
         }
 
-        this.$eventBus.$emit('start-upload')
+        this.$emit('start-upload')
 
         const data = new FormData()
         data.append('audio', this.record.blob, `${this.filename}.mp3`)
@@ -33,9 +37,9 @@
         headers['Content-Type'] = `multipart/form-data; boundary=${data._boundary}`
 
         this.$http.post(this.uploadUrl, data, { headers: headers }).then(resp => {
-          this.$eventBus.$emit('end-upload', { status: 'success', response: resp })
+          this.$emit('end-upload', { status: 'success', response: resp })
         }).catch(error => {
-          this.$eventBus.$emit('end-upload', { status: 'fail', response: error })
+          this.$emit('end-upload', { status: 'fail', response: error })
         })
       }
     }
