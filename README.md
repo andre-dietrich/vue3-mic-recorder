@@ -1,6 +1,6 @@
 # vue3-audio-recorder
 
-> Audio recorder for Vue3. It allows to create, play, download and store records on a server.
+> Audio recorder for Vue3 (a fork of [vue-audio-recorder](https://github.com/grishkovelli/vue-audio-recorder)). It allows to create, play, download and store records on a server.
 
 #### [Live demo](https://jsfiddle.net/grishkovelli/rb1anxyj/)
 
