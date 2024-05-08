@@ -199,11 +199,11 @@
             'ar-icon--rec': isRecording,
             'ar-icon--pulse': isRecording && volume > 0.02
           }"
-          @click.native="toggleRecorder"/>
+          @click="toggleRecorder"/>
         <icon-button
           class="ar-icon ar-icon__sm ar-recorder__stop"
           name="stop"
-          @click.native="stopRecorder"/>
+          @click="stopRecorder"/>
       </div>
 
       <div class="ar-recorder__records-limit" v-if="attempts">Attempts: {{attemptsLeft}}/{{attempts}}</div>
@@ -249,15 +249,16 @@
 </template>
 
 <script>
-  import AudioPlayer from './player'
-  import Downloader  from './downloader'
-  import IconButton  from './icon-button'
+  import IconButton from './IconButton.vue'
+  import AudioPlayer from './AudioPlayer.vue'
+  import Downloader from './Downloader.vue'
+  import Uploader from './Uploader.vue'
   import Recorder    from '@/lib/recorder'
-  import Uploader    from './uploader'
   import UploaderPropsMixin from '@/mixins/uploader-props'
   import { convertTimeMMSS }  from '@/lib/utils'
 
   export default {
+    name: "AudioRecorder",
     mixins: [UploaderPropsMixin],
     props: {
       attempts : { type: Number },
@@ -293,7 +294,7 @@
       IconButton,
       Uploader
     },
-    beforeDestroy () {
+    beforeUnmount () {
       this.stopRecorder()
     },
     methods: {

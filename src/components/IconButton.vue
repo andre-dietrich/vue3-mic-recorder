@@ -4,6 +4,7 @@
 
 <script>
   export default {
+    name: "IconButton",
     props: {
       name: { type: String }
     },

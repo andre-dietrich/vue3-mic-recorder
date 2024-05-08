@@ -37,10 +37,11 @@
 </template>
 
 <script>
-  import IconButton  from './icon-button'
-  import LineControl from './line-control'
+  import IconButton from './IconButton.vue'
+  import LineControl from './LineControl.vue'
 
   export default {
+    name: "VolumeControl",
     data () {
       return {
         volume: 0.8

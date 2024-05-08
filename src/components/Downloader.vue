@@ -7,13 +7,14 @@
     id="download"
     class="ar-icon ar-icon__xs ar-icon--no-border"
     name="download"
-    @click.native="download"/>
+    @click="download"/>
 </template>
 
 <script>
-  import IconButton from './icon-button'
+  import IconButton from './IconButton.vue'
 
   export default {
+    name: "Downloader",
     props: {
       record    : { type: Object },
       filename  : { type: String }

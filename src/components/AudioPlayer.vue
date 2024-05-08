@@ -75,7 +75,7 @@
         class="ar-icon ar-icon__lg ar-player__play"
         :name="playBtnIcon"
         :class="{'ar-player__play--active': isPlaying}"
-        @click.native="playback"/>
+        @click="playback"/>
     </div>
 
     <div class="ar-player-bar">
@@ -94,12 +94,13 @@
 </template>
 
 <script>
-  import IconButton    from './icon-button'
-  import LineControl   from './line-control'
-  import VolumeControl from './volume-control'
+  import IconButton from './IconButton.vue'
+  import LineControl from './LineControl.vue'
+  import VolumeControl from './VolumeControl.vue'
   import { convertTimeMMSS } from '@/lib/utils'
 
   export default {
+    name: "AudioPlayer",
     props: {
       src      : { type: String },
       record   : { type: Object },
@@ -125,7 +126,7 @@
         this.isPlaying = false
       })
 
-      this.player.addEventListener('loadeddata', (ev) => {
+      this.player.addEventListener('loadeddata', () => {
         this._resetProgress()
         this.duration = convertTimeMMSS(this.player.duration)
       })
@@ -139,6 +140,7 @@
           return url
         } else {
           this._resetProgress()
+          return null
         }
       },
       playBtnIcon () {

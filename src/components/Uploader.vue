@@ -3,14 +3,15 @@
 </style>
 
 <template>
-  <icon-button name="save" class="ar-icon ar-icon__xs ar-icon--no-border" @click.native="upload"/>
+  <icon-button name="save" class="ar-icon ar-icon__xs ar-icon--no-border" @click="upload"/>
 </template>
 
 <script>
-  import IconButton from './icon-button'
+  import IconButton from './IconButton.vue'
   import UploaderPropsMixin from '@/mixins/uploader-props'
 
   export default {
+    name: "Uploader",
     mixins: [UploaderPropsMixin],
     props: {
       record: { type: Object }

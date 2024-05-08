@@ -1,9 +1,9 @@
 import { createApp } from 'vue/dist/vue.esm-bundler';
 import axios from 'axios'
 import VueAxios from 'vue-axios';
-import App from './app'
+import App from './app.vue'
 
-import AudioRecorder from '@/index'
+import Vue3AudioRecorder from '@'
 
 let app = createApp({
   components: {App},
@@ -11,6 +11,6 @@ let app = createApp({
 });
 
 app.use(VueAxios, axios)
-app.use(AudioRecorder)
+app.use(Vue3AudioRecorder)
 
 app.mount("#app")
