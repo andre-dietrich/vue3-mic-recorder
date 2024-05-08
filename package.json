@@ -4,7 +4,6 @@
   "version": "1.0.1",
   "author": "Eduardo Gonzalez <edu.gonza.lopez@gmail.com>",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite dev",
