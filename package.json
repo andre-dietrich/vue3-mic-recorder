@@ -1,7 +1,7 @@
 {
   "name": "vue3-mic-recorder",
   "description": "Audio recorder for Vue3 (a fork of vue-audio-recorder). It allows to create, play, download and store records on a server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Eduardo Gonzalez <edu.gonza.lopez@gmail.com>",
   "license": "MIT",
   "type": "module",
