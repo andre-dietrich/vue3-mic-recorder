@@ -112,6 +112,10 @@ yarn run build
 
 ## Authors
 
+[Eduardo Gonzalez](https://github.com/edugonza) - Developer
+
+### Original Authors
+
 [Gennady Grishkovtsov](https://www.linkedin.com/in/grishkovtsov/) - Developer
 
 [Olga Zimina](https://www.behance.net/zimin4ik) - UIX Designer
