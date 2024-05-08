@@ -3,7 +3,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios';
 import App from './app.vue'
 
-import Vue3AudioRecorder from '@'
+import Vue3MicRecorder from '@'
 
 let app = createApp({
   components: {App},
@@ -11,6 +11,6 @@ let app = createApp({
 });
 
 app.use(VueAxios, axios)
-app.use(Vue3AudioRecorder)
+app.use(Vue3MicRecorder)
 
 app.mount("#app")

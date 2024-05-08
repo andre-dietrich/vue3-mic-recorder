@@ -1,7 +1,7 @@
 {
-  "name": "vue3-audio-recorder",
+  "name": "vue3-mic-recorder",
   "description": "Audio recorder for Vue3 (a fork of vue-audio-recorder). It allows to create, play, download and store records on a server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Eduardo Gonzalez <edu.gonza.lopez@gmail.com>",
   "license": "MIT",
   "type": "module",
@@ -9,8 +9,8 @@
     "dev": "vite dev",
     "build": "vite build"
   },
-  "main": "./dist/vue3-audio-recorder.umd.cjs",
-  "module": "./dist/vue3-audio-recorder.js",
+  "main": "./dist/vue3-mic-recorder.umd.cjs",
+  "module": "./dist/vue3-mic-recorder.js",
   "files": [
     "dist"
   ],
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edugonza/vue3-audio-recorder.git"
+    "url": "git+https://github.com/edugonza/vue3-mic-recorder.git"
   },
   "bugs": {
-    "url": "https://github.com/edugonza/vue3-audio-recorder/issues"
+    "url": "https://github.com/edugonza/vue3-mic-recorder/issues"
   },
-  "homepage": "https://github.com/edugonza/vue3-audio-recorder#readme"
+  "homepage": "https://github.com/edugonza/vue3-mic-recorder#readme"
 }

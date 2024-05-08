@@ -1,10 +1,8 @@
-# vue3-audio-recorder
+# vue3-mic-recorder
 
 > Audio recorder for Vue3 (a fork of [vue-audio-recorder](https://github.com/grishkovelli/vue-audio-recorder)). It allows to create, play, download and store records on a server.
 
-#### [Live demo](https://jsfiddle.net/grishkovelli/rb1anxyj/)
-
-![](https://raw.githubusercontent.com/grishkovelli/vue-audio-recorder/master/screenshot.png)
+![](https://raw.githubusercontent.com/edugonza/vue3-mic-recorder/master/screenshot.png)
 
 ### Features
 
@@ -26,7 +24,7 @@
 ## Installation
 
 ```
-npm i vue-audio-recorder --save
+npm i vue3-mic-recorder --save
 ```
 
 ## AudioRecorder props
@@ -60,7 +58,7 @@ npm i vue-audio-recorder --save
 ## Usage
 
 ```js
-    import AudioRecorder from 'vue-audio-recorder'
+    import AudioRecorder from 'vue3-mic-recorder'
 
     Vue.use(AudioRecorder)
 ```

@@ -11,8 +11,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
-      name: "vue3-audio-recorder",
-      fileName: "vue3-audio-recorder"
+      name: "vue3-mic-recorder",
+      fileName: "vue3-mic-recorder"
     },
     rollupOptions: {
       external: ["vue"],
