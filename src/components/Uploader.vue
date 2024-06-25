@@ -1,48 +1,58 @@
 <style lang="scss">
-  @import '../scss/icons';
+@import "../scss/icons";
 </style>
 
 <template>
-  <icon-button name="save" class="ar-icon ar-icon__xs ar-icon--no-border" @click="upload"/>
+  <icon-button
+    name="save"
+    class="ar-icon ar-icon__xs ar-icon--no-border"
+    @click="upload"
+  />
 </template>
 
 <script>
-  import IconButton from './IconButton.vue'
-  import UploaderPropsMixin from '@/mixins/uploader-props'
+import IconButton from "./IconButton.vue";
+import UploaderPropsMixin from "@/mixins/uploader-props";
 
-  export default {
-    name: "Uploader",
-    mixins: [UploaderPropsMixin],
-    props: {
-      record: { type: Object }
-    },
-    emits: [
-      'start-upload',
-      'end-upload',
-    ],
-    components: {
-      IconButton
-    },
-    methods: {
-      upload () {
-        if (!this.record.url) {
-          return
-        }
-
-        this.$emit('start-upload')
-
-        const data = new FormData()
-        data.append('audio', this.record.blob, `${this.filename}.mp3`)
-
-        const headers = Object.assign(this.headers, {})
-        headers['Content-Type'] = `multipart/form-data; boundary=${data._boundary}`
-
-        this.$http.post(this.uploadUrl, data, { headers: headers }).then(resp => {
-          this.$emit('end-upload', { status: 'success', response: resp })
-        }).catch(error => {
-          this.$emit('end-upload', { status: 'fail', response: error })
-        })
+export default {
+  name: "Uploader",
+  mixins: [UploaderPropsMixin],
+  props: {
+    record: { type: Object },
+    customUploader: { type: Function },
+  },
+  emits: ["start-upload", "end-upload"],
+  components: {
+    IconButton,
+  },
+  methods: {
+    upload() {
+      if (this.customUploader) {
+        this.customUploader(this.record);
+        return;
       }
-    }
-  }
+
+      if (!this.record.url) {
+        return;
+      }
+
+      this.$emit("start-upload");
+
+      const data = new FormData();
+      data.append("audio", this.record.blob, `${this.filename}.mp3`);
+
+      const headers = Object.assign(this.headers, {});
+      headers["Content-Type"] = `multipart/form-data; boundary=${data._boundary}`;
+
+      this.$http
+        .post(this.uploadUrl, data, { headers: headers })
+        .then((resp) => {
+          this.$emit("end-upload", { status: "success", response: resp });
+        })
+        .catch((error) => {
+          this.$emit("end-upload", { status: "fail", response: error });
+        });
+    },
+  },
+};
 </script>

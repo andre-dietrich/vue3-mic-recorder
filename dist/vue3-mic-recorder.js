@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var r=document.createElement("style");r.appendChild(document.createTextNode(".ar-line-control{position:relative;height:8px;border-radius:5px;background-color:#e6e6e6}.ar-line-control__head{position:absolute;height:inherit;background-color:#616161;border-radius:inherit}.ar-volume{display:flex;align-items:center;line-height:10px}.ar-volume-bar{width:50px;height:6px;background:#e6e6e6;border-radius:4px;position:relative}.ar-volume__icon{fill:#747474;width:24px;height:24px;border:0;border-radius:0;padding:0;background-color:unset;margin-right:3px}.ar-player{width:380px;height:unset;border:0;border-radius:0;display:flex;flex-direction:row;align-items:center;justify-content:center;background-color:unset;font-family:Roboto,sans-serif}.ar-player>.ar-player-bar{border:1px solid #E8E8E8;border-radius:24px;margin:0 0 0 5px}.ar-player>.ar-player-bar>.ar-player__progress{width:125px}.ar-player-bar{display:flex;align-items:center;height:38px;padding:0 12px;margin:0 5px}.ar-player-actions{width:55%;display:flex;align-items:center;justify-content:space-around}.ar-player__progress{width:160px;margin:0 8px}.ar-player__time{color:#54545480;font-size:16px;width:41px}.ar-player__play{width:45px;height:45px;background-color:#fff;box-shadow:0 2px 11px 11px #00000012}.ar-player__play--active{fill:#fff!important;background-color:#05cbcd!important}.ar-player__play--active:hover{fill:#505050!important}.ar{width:420px;font-family:Roboto,sans-serif;border-radius:16px;background-color:#fafafa;box-shadow:0 4px 18px #0000002b;position:relative;box-sizing:content-box}.ar-content{padding:16px;display:flex;flex-direction:column;align-items:center}.ar-records{height:138px;padding-top:1px;overflow-y:auto;margin-bottom:20px}.ar-records__record{width:320px;height:45px;padding:0 10px;margin:0 auto;line-height:45px;display:flex;justify-content:space-between;border-bottom:1px solid #E8E8E8;position:relative}.ar-records__record--selected{border:1px solid #E8E8E8;border-radius:24px;background-color:#fff;margin-top:-1px;padding:0 34px}.ar-recorder{position:relative;display:flex;flex-direction:column;align-items:center}.ar-recorder__duration{color:#aeaeae;font-size:32px;font-weight:500;margin-top:20px;margin-bottom:16px}.ar-recorder__stop{position:absolute;top:10px;right:-52px}.ar-recorder__time-limit{position:absolute;color:#aeaeae;font-size:12px;top:128px}.ar-recorder__records-limit{position:absolute;color:#aeaeae;font-size:13px;top:78px}.ar-spinner{display:flex;height:30px;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;width:144px;z-index:10}.ar-spinner__dot{display:block;margin:0 8px;border-radius:50%;width:30px;height:30px;background:#05cbcd;animation-name:blink;animation-duration:1.4s;animation-iteration-count:infinite;animation-fill-mode:both}.ar-spinner__dot:nth-child(2){animation-delay:.2s}.ar-spinner__dot:nth-child(3){animation-delay:.4s}@keyframes blink{0%{opacity:.2}20%{opacity:1}to{opacity:.2}}.ar__text{color:#54545480;font-size:16px}.ar__blur{filter:blur(2px);opacity:.7}.ar__overlay{position:absolute;width:100%;height:100%;z-index:10}.ar__upload-status{text-align:center;font-size:10px;padding:2px;letter-spacing:1px;position:absolute;bottom:0}.ar__upload-status--success{color:green}.ar__upload-status--fail{color:red}.ar__rm{cursor:pointer;position:absolute;width:6px;height:6px;padding:6px;line-height:6px;margin:auto;left:10px;bottom:0;top:0;color:#f4785a}.ar__downloader,.ar__uploader{position:absolute;top:0;bottom:0;margin:auto}.ar__downloader{right:115px}.ar__uploader{right:85px}.ar-icon{fill:#747474;border-radius:50%;border:1px solid #05CBCD;background-color:#fff;padding:5px;cursor:pointer;transition:.2s}.ar-icon:hover{fill:#505050}.ar-icon--no-border{border:0;border-radius:0;padding:0}.ar-icon--rec{fill:#fff;background-color:#ff6b64;border-color:transparent}.ar-icon--pulse{animation:ripple .5s linear infinite}@keyframes ripple{0%{box-shadow:0 0 #ff00001a,0 0 0 1px #ff00001a,0 0 0 5px #ff00001a}to{box-shadow:0 0 #ff00001a,0 0 0 10px #ff00001a,0 0 0 20px #f000}}.ar-icon__xs{width:18px;height:18px;line-height:18px}.ar-icon__sm{width:30px;height:30px;line-height:30px}.ar-icon__lg{width:45px;height:45px;line-height:45px;box-shadow:0 2px 5px 1px #9e9e9e80}")),document.head.appendChild(r)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
+(function(){"use strict";try{if(typeof document<"u"){var r=document.createElement("style");r.appendChild(document.createTextNode(".ar-line-control{position:relative;height:8px;border-radius:5px;background-color:#e6e6e6}.ar-line-control__head{position:absolute;height:inherit;background-color:#616161;border-radius:inherit}.ar-volume{display:flex;align-items:center;line-height:10px}.ar-volume-bar{width:50px;height:6px;background:#e6e6e6;border-radius:4px;position:relative}.ar-volume__icon{fill:#747474;width:24px;height:24px;border:0;border-radius:0;padding:0;background-color:unset;margin-right:3px}.ar-player{width:380px;height:unset;border:0;border-radius:0;display:flex;flex-direction:row;align-items:center;justify-content:center;background-color:unset;font-family:Roboto,sans-serif}.ar-player>.ar-player-bar{border:1px solid #E8E8E8;border-radius:24px;margin:0 0 0 5px}.ar-player>.ar-player-bar>.ar-player__progress{width:125px}.ar-player-bar{display:flex;align-items:center;height:38px;padding:0 12px;margin:0 5px}.ar-player-actions{width:55%;display:flex;align-items:center;justify-content:space-around}.ar-player__progress{width:160px;margin:0 8px}.ar-player__time{color:#54545480;font-size:16px;width:41px}.ar-player__play{width:45px;height:45px;background-color:#fff;box-shadow:0 2px 11px 11px #00000012}.ar-player__play--active{fill:#fff!important;background-color:#05cbcd!important}.ar-player__play--active:hover{fill:#505050!important}.ar{width:420px;font-family:Roboto,sans-serif;border-radius:16px;background-color:#fafafa;box-shadow:0 4px 18px #0000002b;position:relative;box-sizing:content-box}.ar-content{padding:16px;display:flex;flex-direction:column;align-items:center}.ar-records{height:138px;padding-top:1px;overflow-y:auto;margin-bottom:20px}.ar-records__record{width:320px;height:45px;padding:0 10px;margin:0 auto;line-height:45px;display:flex;justify-content:space-between;border-bottom:1px solid #e8e8e8;position:relative}.ar-records__record--selected{border:1px solid #e8e8e8;border-radius:24px;background-color:#fff;margin-top:-1px;padding:0 34px}.ar-recorder{position:relative;display:flex;flex-direction:column;align-items:center}.ar-recorder__duration{color:#aeaeae;font-size:32px;font-weight:500;margin-top:20px;margin-bottom:16px}.ar-recorder__stop{position:absolute;top:10px;right:-52px}.ar-recorder__time-limit{position:absolute;color:#aeaeae;font-size:12px;top:128px}.ar-recorder__records-limit{position:absolute;color:#aeaeae;font-size:13px;top:78px}.ar-spinner{display:flex;height:30px;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;width:144px;z-index:10}.ar-spinner__dot{display:block;margin:0 8px;border-radius:50%;width:30px;height:30px;background:#05cbcd;animation-name:blink;animation-duration:1.4s;animation-iteration-count:infinite;animation-fill-mode:both}.ar-spinner__dot:nth-child(2){animation-delay:.2s}.ar-spinner__dot:nth-child(3){animation-delay:.4s}@keyframes blink{0%{opacity:.2}20%{opacity:1}to{opacity:.2}}.ar__text{color:#54545480;font-size:16px}.ar__blur{filter:blur(2px);opacity:.7}.ar__overlay{position:absolute;width:100%;height:100%;z-index:10}.ar__upload-status{text-align:center;font-size:10px;padding:2px;letter-spacing:1px;position:absolute;bottom:0}.ar__upload-status--success{color:green}.ar__upload-status--fail{color:red}.ar__rm{cursor:pointer;position:absolute;width:6px;height:6px;padding:6px;line-height:6px;margin:auto;left:10px;bottom:0;top:0;color:#f4785a}.ar__downloader,.ar__uploader{position:absolute;top:0;bottom:0;margin:auto}.ar__downloader{right:115px}.ar__uploader{right:85px}.ar-icon{fill:#747474;border-radius:50%;border:1px solid #05CBCD;background-color:#fff;padding:5px;cursor:pointer;transition:.2s}.ar-icon:hover{fill:#505050}.ar-icon--no-border{border:0;border-radius:0;padding:0}.ar-icon--rec{fill:#fff;background-color:#ff6b64;border-color:transparent}.ar-icon--pulse{animation:ripple .5s linear infinite}@keyframes ripple{0%{box-shadow:0 0 #ff00001a,0 0 0 1px #ff00001a,0 0 0 5px #ff00001a}to{box-shadow:0 0 #ff00001a,0 0 0 10px #ff00001a,0 0 0 20px #f000}}.ar-icon__xs{width:18px;height:18px;line-height:18px}.ar-icon__sm{width:30px;height:30px;line-height:30px}.ar-icon__lg{width:45px;height:45px;line-height:45px;box-shadow:0 2px 5px 1px #9e9e9e80}")),document.head.appendChild(r)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
 import { openBlock as ae, createElementBlock as de, createElementVNode as re, normalizeStyle as $a, resolveComponent as Me, createVNode as Ve, normalizeClass as ut, toDisplayString as xe, createBlock as pt, createCommentVNode as De, Fragment as es, renderList as ts } from "vue";
 const Ye = (p, E) => {
   const A = p.__vccOpts || p;
@@ -243,17 +243,19 @@ const Ms = /* @__PURE__ */ Ye(vs, [["render", ws]]), ka = {
   name: "Uploader",
   mixins: [ka],
   props: {
-    record: { type: Object }
+    record: { type: Object },
+    customUploader: { type: Function }
   },
-  emits: [
-    "start-upload",
-    "end-upload"
-  ],
+  emits: ["start-upload", "end-upload"],
   components: {
     IconButton: st
   },
   methods: {
     upload() {
+      if (this.customUploader) {
+        this.customUploader(this.record);
+        return;
+      }
       if (!this.record.url)
         return;
       this.$emit("start-upload");
@@ -10052,7 +10054,8 @@ const or = {
     failedUpload: { type: Function },
     beforeUpload: { type: Function },
     successfulUpload: { type: Function },
-    selectRecord: { type: Function }
+    selectRecord: { type: Function },
+    customUploader: { type: Function }
   },
   data() {
     return {
@@ -10163,9 +10166,9 @@ function Ar(p, E, A, j, K, D) {
           onClick: D.stopRecorder
         }, null, 8, ["onClick"])
       ]),
-      A.attempts ? (ae(), de("div", dr, "Attempts: " + xe(D.attemptsLeft) + "/" + xe(A.attempts), 1)) : De("", !0),
+      A.attempts ? (ae(), de("div", dr, " Attempts: " + xe(D.attemptsLeft) + "/" + xe(A.attempts), 1)) : De("", !0),
       re("div", gr, xe(D.recordedTime), 1),
-      A.time ? (ae(), de("div", vr, "Record duration is limited: " + xe(A.time) + "m", 1)) : De("", !0),
+      A.time ? (ae(), de("div", vr, " Record duration is limited: " + xe(A.time) + "m ", 1)) : De("", !0),
       re("div", wr, [
         (ae(!0), de(es, null, ts(K.recordList, (g, m) => (ae(), de("div", {
           class: ut(["ar-records__record", { "ar-records__record--selected": g.id === K.selected.id }]),
@@ -10176,7 +10179,7 @@ function Ar(p, E, A, j, K, D) {
             key: 0,
             class: "ar__rm",
             onClick: (N) => D.removeRecord(m)
-          }, "×", 8, Sr)) : De("", !0),
+          }, " × ", 8, Sr)) : De("", !0),
           re("div", Rr, "Record " + xe(m + 1), 1),
           re("div", Br, xe(g.duration), 1),
           g.id === K.selected.id && A.showDownloadButton ? (ae(), pt(Y, {
@@ -10193,8 +10196,9 @@ function Ar(p, E, A, j, K, D) {
             headers: p.headers,
             "upload-url": p.uploadUrl,
             onStartUpload: D.onStartUpload,
-            onEndUpload: D.onEndUpload
-          }, null, 8, ["record", "filename", "headers", "upload-url", "onStartUpload", "onEndUpload"])) : De("", !0)
+            onEndUpload: D.onEndUpload,
+            customUploader: A.customUploader
+          }, null, 8, ["record", "filename", "headers", "upload-url", "onStartUpload", "onEndUpload", "customUploader"])) : De("", !0)
         ], 10, Mr))), 128))
       ]),
       Ve(u1, {
