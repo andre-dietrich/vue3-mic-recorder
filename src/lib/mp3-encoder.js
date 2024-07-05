@@ -2,16 +2,16 @@ import { Mp3Encoder } from '@breezystack/lamejs'
 
 export default class {
   constructor(config) {
-    this.bitRate    = config.bitRate
+    this.bitRate = config.bitRate
     this.sampleRate = config.sampleRate
     this.dataBuffer = []
-    this.encoder    = new Mp3Encoder(1, this.sampleRate, this.bitRate)
+    this.encoder = new Mp3Encoder(1, this.sampleRate, this.bitRate)
   }
 
   encode(arrayBuffer) {
     const maxSamples = 1152
-    const samples    = this._convertBuffer(arrayBuffer)
-    let remaining    = samples.length
+    const samples = this._convertBuffer(arrayBuffer)
+    let remaining = samples.length
 
     for (let i = 0; remaining >= 0; i += maxSamples) {
       const left = samples.subarray(i, i + maxSamples)
@@ -27,16 +27,16 @@ export default class {
     this.dataBuffer = []
 
     return {
-      id   : Date.now(),
-      blob : blob,
-      url  : URL.createObjectURL(blob)
+      id: Date.now(),
+      blob: blob,
+      url: URL.createObjectURL(blob),
     }
   }
 
   _floatTo16BitPCM(input, output) {
     for (let i = 0; i < input.length; i++) {
       const s = Math.max(-1, Math.min(1, input[i]))
-      output[i] = (s < 0 ? s * 0x8000 : s * 0x7FFF)
+      output[i] = s < 0 ? s * 0x8000 : s * 0x7fff
     }
   }
 
